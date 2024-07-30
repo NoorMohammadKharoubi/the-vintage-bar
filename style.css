@@ -1,0 +1,286 @@
+body {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.navigation-container .navigation-bar {
+  justify-content: space-between;
+}
+
+.navigation-bar img {
+  height: 27px;
+}
+
+.navigation-bar ul {
+  display: flex;
+}
+
+.navigation-bar ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.navigation-bar li a {
+  text-align: center;
+  font: normal normal bold 12px/18px Manrope;
+  letter-spacing: 1.2px;
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 20px;
+  opacity: 1;
+}
+.navigation-bar li:last-child a {
+  text-decoration: underline;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#join-heading {
+  font: normal normal 600 12px/20px Manrope;
+  letter-spacing: 3.6px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+#title-heading {
+  font: normal normal 300 40px/50px Chronicle Display;
+  letter-spacing: 0px;
+  color: #111111;
+}
+
+#apply-btn {
+  text-decoration: underline;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.left-column {
+  width: 28%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  width: 40%;
+  padding: 5%;
+}
+
+.right-paragraph {
+  color: #656565;
+  padding-left: 10px;
+  margin-top: 20px;
+  font: normal normal normal 18px/26px Chronicle Display;
+  letter-spacing: 0px;
+  color: #656565;
+  text-align: left;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  background: #f1efea;
+  text-align: center;
+  padding: 3%;
+  margin: 0;
+}
+
+#benefits-title {
+  font: normal normal 600 12px/20px Manrope;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+#tvb-title {
+  text-align: center;
+  font: normal normal 300 32px/43px Chronicle Display;
+  letter-spacing: 0px;
+  color: #111111;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2%;
+}
+
+.pricing-plan {
+  box-shadow: 0px 3px 60px #65656503;
+  flex-basis: 30%;
+  background-color: white;
+  margin: 10px 30px;
+  padding: 15px;
+  color: #111111;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.service-title {
+  text-align: center;
+  font: normal normal 600 12px/20px Manrope;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.versions {
+  text-align: center;
+  font: normal normal 300 40px/42px Chronicle Display;
+  letter-spacing: 0px;
+  color: #111111;
+}
+
+.pricing-plan ul {
+  line-height: 2;
+  color: #656565;
+  text-align: left;
+  list-style-type: none;
+  text-align: left;
+  font: normal normal normal 16px/33px Chronicle Display;
+  letter-spacing: 0px;
+}
+
+.pricing-plan ul li::before {
+  content: url("./images/check.svg");
+  display: inline-block;
+  width: 25px;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.pricing-plan button {
+  color: #fff;
+  background: #444444;
+  font: normal normal medium 13px/20px Manrope;
+  letter-spacing: 0px;
+  position: relative;
+  top: 35px;
+  padding: 10px 5px;
+  margin: 0 20%;
+}
+
+.pricing-plan button:hover {
+  background-color: #1f262c;
+}
+
+.third {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5% 10%;
+}
+
+.third .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  object-fit: cover;
+  object-position: center;
+  padding: 10px;
+}
+
+.third .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+}
+
+.paragraph h3 {
+  text-align: left;
+  font: normal normal 300 32px/43px Chronicle Display;
+  letter-spacing: 0px;
+  color: #111111;
+}
+
+.paragraph h5 {
+  text-align: left;
+  font: normal normal bold 12px/17px Manrope;
+  letter-spacing: 1.2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.paragraph p {
+  text-align: left;
+  font: normal normal normal 16px/24px Chronicle Display;
+  letter-spacing: 0px;
+  color: #656565;
+}
+
+@media only screen and (max-width: 600px) {
+  .first {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .left-column {
+    width: 90%;
+  }
+  .right-column {
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10%;
+  }
+  .right-paragraph {
+    padding: 0;
+  }
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pricing-plan {
+    width: 90%;
+    margin: 10% 0;
+  }
+  .third {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .third .image {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .third .paragraph {
+    margin: 5%;
+    width: 90%;
+  }
+  .navigation-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+  }
+  .navigation-bar img {
+    height: 27px;
+  }
+  .navigation-bar ul {
+    display: none;
+  }
+}
